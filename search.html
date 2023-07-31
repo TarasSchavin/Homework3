@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://fom.in.ua/echo">
+        <fieldset>
+            <legend>Пошук</legend>
+            <label for="car_type">Тип кузова:</label>
+            <select id="car_type" name="car_type">
+                <option value="Седан">Седан</option>
+                <option value="Кросовер">Кросовер</option>
+                <option value="Хечбек">Хечбек</option>
+            </select><br>    
+
+            <label for="car_brand">Марка авто:</label>
+            <input type="text" name="car_brand" id="car_brand" placeholder="Марка авто"><br>
+
+            <label for="producing_country">Країна виробник:</label>
+            <input type="text" name="producing_country" id="producing_country" placeholder="Країна виробник"><br>
+
+            <label for="car_price_from">Ціна(від):</label>
+            <input type="number" name="car_price_from" id="car_price_from" placeholder="Ціна від" min="0"><br>
+
+            <label for="car_price_from">Ціна(до):</label>
+            <input type="number" name="car_price_to" id="car_price_to" placeholder="Ціна до" min="0"><br>
+
+            <label for="graduation_year_from">Рік(від):</label>
+            <input type="number" name="graduation_year_from" id="graduation_year_from" placeholder="Рік від" min="1950"><br>
+
+            <label for="graduation_year_to">Рік(до):</label>
+            <input type="number" name="graduation_year_to" id="graduation_year_to" placeholder="Рік до" min="1950"><br>
+
+            <label for="condition">Стан:</label>
+            <input type="checkbox" name="condition_broken" id="condition" value="Бита">
+            <label for="condition_broken">Бита</label>
+
+            <input type="checkbox" name="condition_credit" id="condition" value="У кредит">
+            <label for="condition_credit">У кредит</label>
+
+            <input type="checkbox" name="condition_uncleared" id="condition" value="Нерозмитнена">
+            <label for="condition_uncleared">Нерозмитнена</label><br>
+
+            <label for="fuel_type">Тип палива:</label>
+            <select name="fuel_type" name="fuel_type">
+                <option value="Дизель">Дизель</option>
+                <option value="Бензин">Бензин</option>
+                <option value="Гібрид">Гібрид</option>
+            </select><br>
+
+            <label for="transmission_type">Тип коробки передач:</label>
+            <select id="transmission_type" name="transmission_type">
+                <option value="Механічна">Механічна</option>
+                <option value="Автоматична">Автоматична</option>
+            </select><br>
+
+            <label for="color">Колір:</label>
+            <input type="color" id="color" name="color"><br>
+
+            <label for="comfort">Комфорт:</label>
+            <input type="checkbox" id="comfort_sunroof" name="comfort" value="Люк">
+            <label for="comfort_sunroof">Люк</label>
+    
+            <input type="checkbox" id="comfort_leather" name="comfort" value="Шкіряний салон">
+            <label for="comfort_leather">Шкіряний салон</label><br>
+
+            <input type="submit" value="Знайти">
+        </fieldset>
+    </form>
+</body>
+</html>
